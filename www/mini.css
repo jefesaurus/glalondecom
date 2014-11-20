@@ -1,0 +1,15 @@
+.middle {
+  width: 100%;
+}
+.center-column {
+  width:100%;
+}
+
+#banner-wrapper {
+  width: 100%;
+}
+#banner {
+  position: relative;
+  width: 100%;
+  right: auto;
+}
