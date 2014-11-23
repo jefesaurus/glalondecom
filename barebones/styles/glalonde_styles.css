@@ -1,0 +1,173 @@
+body {
+  font-family: 'Open Sans', Helvetica, Arial, Verdana, sans-serif;
+  font-weight: 200;
+}
+
+.middle {
+  position: relative;
+  margin-top: 90px;
+  margin-bottom: 40px;
+  padding: 40px;
+  overflow: auto;
+  background-color: rgb(255,255,255);
+  box-shadow: 5px 5px 20px #444;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight:lighter;
+  margin: 0px;
+}
+
+.body {
+  font-size: 16px;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.text {
+  font-weight:lighter;
+  text-align:center;
+}
+
+.right-border {
+  border-width: 1px;
+  border-right-style: solid;
+  /*border-color: #A62F00;*/
+  border-color: #A60000;
+}
+
+.left-border {
+  border-width: 2px;
+  border-left-style: solid;
+  border-color: rgb(225, 77, 67);
+}
+
+.smart-padding {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+
+/*
+Side banner:
+*/
+
+#banner {
+  /*background: url(bgbanner.png);*/
+  background-color: rgb(38, 41, 44);
+  color: rgb(255, 255, 255);
+  top: 100%;
+  padding: 10px;
+  text-align: right;
+  box-shadow: 5px 5px 20px #000;
+}
+
+#banner hr {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+#aboutlink a {
+  color: #888888;
+}
+
+.searchtextbox {
+  width: 100%;
+  background-color: rgb(54, 59, 63);
+  height: 1.5em;
+  text-align: right;
+}
+
+#commentform input[type=text] {
+  background-color: rgb(255, 255, 255);
+}
+#commentform input[type=text]:focus,
+#commentform input[type=email]:focus,
+#commentform textarea:focus {
+  color: rgb(54, 59, 63);
+}
+
+input[type=text] {
+}
+.searchtextbox:focus {
+  color: #fff;
+}
+
+/* ACCORDION MENU STUFF */
+#accordion {
+  text-align: right;
+}
+
+#accordion ul{
+  list-style:none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.tab {
+  width: 100%;
+  color: #536878;
+}
+
+.tab a{
+  color: rgb(194, 196, 197);
+}
+
+.tab [type=radio] {
+  display: none;
+}
+
+#banner a:hover,
+#accordion .tab label:hover,
+#accordion .tab .selected {
+  color: rgb(225, 77, 67);
+}
+
+/* Unchecked label style */
+.tab label {
+  color: rgb(255, 255, 255);
+  display: block;
+  padding: 5px;
+  padding-bottom: 1px;
+  border-width: 1px;
+  border-bottom-style: solid;
+  font-size: 18px;
+
+  -webkit-transition: color 0.25s ease-in-out;
+  -moz-transition: color 0.25s ease-in-out;
+  -o-transition: color 0.25s ease-in-out;
+  -ms-transition: color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out;
+}
+
+/* Checked label style */
+input:checked + label {
+  border-right-style: none;
+  border-color: rgb(225, 77, 67);
+  color: rgb(225, 77, 67);
+}
+
+/* default for the content is not shown */
+.tabcontent {
+  height: 0px;
+  padding-right: 5px;
+  font-size: 14px;
+
+  border-width: 1px;
+  border-right-style: solid;
+  border-color: rgb(225, 77, 67);
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  white-space:nowrap;
+}
+
+input[type=radio]:checked ~ .tabcontent {
+  height: auto;
+}

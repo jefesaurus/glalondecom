@@ -1,0 +1,45 @@
+@media only screen and (min-width: 960px) {
+  .middle {
+    width: 765px;
+    left: 50%;
+    margin-left: -300px;
+  }
+
+  .center-column {
+    left: 50px;
+    right: 0px;
+  }
+
+  #banner-wrapper {
+    position: fixed;
+    width: 0px;
+    left: 50%;
+    height: 100%;
+    bottom: 100%;
+  }
+
+  #banner {
+    height: 100%;
+    position: absolute;
+    width: 180px;
+    right: 300px;
+  }
+}
+
+@media only screen and (max-width: 959px) {
+  .middle {
+    width: 100%;
+  }
+  .center-column {
+    width:100%;
+  }
+
+  #banner-wrapper {
+    width: 100%;
+  }
+  #banner {
+    position: relative;
+    width: 100%;
+    right: auto;
+  }
+}
