@@ -1,13 +1,13 @@
 <?php
-	/*-----------------------------------------------------------------------------------*/
-	/* This template will be called by all other template files to finish 
-	/* rendering the page and display the footer area/content
-	/*-----------------------------------------------------------------------------------*/
+  /*-----------------------------------------------------------------------------------*/
+  /* This template will be called by all other template files to finish 
+  /* rendering the page and display the footer area/content
+  /*-----------------------------------------------------------------------------------*/
 ?>
 
 <footer class="site-footer" role="contentinfo">
-	<div class="site-info container">
-	</div><!-- .site-info -->
+  <div class="site-info container">
+  </div><!-- .site-info -->
 </footer><!-- #colophon .site-footer -->
 
 <?php wp_footer(); 
