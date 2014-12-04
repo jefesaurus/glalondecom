@@ -9,7 +9,7 @@
 <?php get_search_form(); ?>
 <hr>
 <div id="aboutlink">
-  <a href="http://dyna.mit.edu/about/">About</a>
+  <a href="<?php echo esc_url( home_url( '/about/' ) ); ?>">About</a>
 </div>
 <hr>
 
