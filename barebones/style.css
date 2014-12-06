@@ -567,6 +567,31 @@ html[xmlns] .clearfix {
   height: 1%;
 }
 
+@media only screen and (min-width: 960px) {
+
+  body{
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+
+  article .post-meta{
+    font-size: 0.7em;
+    line-height: 1em;
+  }
+  .menu-main-nav-container a, .side-title, .menu-main-container a{
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  #sidebar{
+    font-size: 0.7em;
+    line-height: 1.5em;
+  }
+  #sidebar h3{
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+}
+
 
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */

@@ -1,26 +1,6 @@
 /* Wide screens above 1280px */
 @media only screen and (min-width: 960px) {
-  body{
-    font-size: 1.5em;
-    line-height: 1.5em;
-  }
 
-  article .post-meta{
-    font-size: 0.7em;
-    line-height: 1em;
-  }
-  .menu-main-nav-container a, .side-title, .menu-main-container a{
-    font-size: 1em;
-    line-height: 1.5em;
-  }
-  #sidebar{
-    font-size: 0.7em;
-    line-height: 1.5em;
-  }
-  #sidebar h3{
-    font-size: 1.5em;
-    line-height: 1.5em;
-  }
 
 
   /* Resposition the middle and sidebar */
