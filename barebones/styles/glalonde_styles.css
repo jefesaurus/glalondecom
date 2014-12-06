@@ -10,7 +10,7 @@ body {
   padding: 40px;
   overflow: auto;
   background-color: rgb(255,255,255);
-  box-shadow: 5px 5px 20px #444;
+  /*box-shadow: 5px 5px 20px #444;*/
 }
 
 h1 {
@@ -64,7 +64,7 @@ Side banner:
   top: 100%;
   padding: 10px;
   text-align: right;
-  box-shadow: 5px 5px 20px #000;
+  /*box-shadow: 5px 5px 20px #000;*/
 }
 
 #banner hr {
@@ -99,12 +99,12 @@ input[type=text] {
 }
 
 /* ACCORDION MENU STUFF */
-#accordion {
+.accordion {
   text-align: right;
+  list-style:none;
 }
 
-#accordion ul{
-  list-style:none;
+.accordion ul{
   padding: 0px;
   margin: 0px;
 }
@@ -123,13 +123,13 @@ input[type=text] {
 }
 
 #banner a:hover,
-#accordion .tab label:hover,
-#accordion .tab .selected {
+.accordion .tab label:hover,
+.accordion .tab .selected {
   color: rgb(225, 77, 67);
 }
 
 /* Unchecked label style */
-.tab label {
+.accordion .tab label {
   color: rgb(255, 255, 255);
   display: block;
   padding: 5px;
@@ -146,7 +146,7 @@ input[type=text] {
 }
 
 /* Checked label style */
-input:checked + label {
+.accordion input:checked + label {
   border-right-style: none;
   border-color: rgb(225, 77, 67);
   color: rgb(225, 77, 67);
@@ -155,19 +155,34 @@ input:checked + label {
 /* default for the content is not shown */
 .tabcontent {
   height: 0px;
-  padding-right: 5px;
-  font-size: 14px;
-
-  border-width: 1px;
-  border-right-style: solid;
-  border-color: rgb(225, 77, 67);
-
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100%;
   white-space:nowrap;
 }
 
+.accordion .tabcontent {
+  padding-right: 5px;
+  font-size: 14px;
+
+  border-width: 1px;
+  border-right-style: solid;
+  border-color: rgb(225, 77, 67);
+}
+
 input[type=radio]:checked ~ .tabcontent {
   height: auto;
+}
+
+/* Menu Expanding Div */
+.expandable {
+  list-style:none;
+}
+
+.inversehide {
+  display: block;
+}
+
+input[type=radio]:checked ~ .inversehide {
+  display: none;
 }

@@ -1,10 +1,34 @@
+/* Wide screens above 1280px */
 @media only screen and (min-width: 960px) {
+  body{
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+
+  article .post-meta{
+    font-size: 0.7em;
+    line-height: 1em;
+  }
+  .menu-main-nav-container a, .side-title, .menu-main-container a{
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  #sidebar{
+    font-size: 0.7em;
+    line-height: 1.5em;
+  }
+  #sidebar h3{
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+
+
+  /* Resposition the middle and sidebar */
   .middle {
     width: 765px;
     left: 50%;
     margin-left: -300px;
   }
-
   .center-column {
     left: 50px;
     right: 0px;
@@ -24,22 +48,97 @@
     width: 180px;
     right: 300px;
   }
+
+  /* When showing full sidebar, don't show the menu hide/show buttons */
+  .inversehide{
+    display: none;
+  }
+
+  /* Also, show the menu full by default */
+  #mainmenu {
+    height: auto;
+  }
 }
 
+/* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {
   .middle {
     width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
+
   .center-column {
     width:100%;
+  }
+
+  .site-footer {
+    padding-bottom: 0px;
   }
 
   #banner-wrapper {
     width: 100%;
   }
+
   #banner {
     position: relative;
     width: 100%;
     right: auto;
+  }
+
+  .side-title{
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .side-title{
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  .side-title{
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  body, article .post-meta{
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+  article .title{
+    font-size: 2em;
+    line-height: 1.5em;
+  }
+
+  .menu-main-nav-container a, .side-title, .menu-main-container a{
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  body, article .post-meta{
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+  article .title{
+    font-size: 2em;
+    line-height: 1.5em;
+  }
+
+  .menu-main-nav-container a, .side-title, .menu-main-container a{
+    font-size: 1em;
+    line-height: 1.5em;
   }
 }
