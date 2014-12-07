@@ -431,6 +431,7 @@ article .the-content img {
 }
 article .the-content .notfullwidth {
   width: auto;
+  max-width: 100%;
 }
 article .meta {
   line-height: 14.8px;
