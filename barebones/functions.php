@@ -40,3 +40,6 @@ function style_scripts()  {
   wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', '10000', 'all' );
 }
 add_action( 'wp_enqueue_scripts', 'style_scripts' ); // Register this fxn and allow Wordpress to call it automatcally in the header
+
+// Add the TinyMCE plugins
+require( 'editor-plugin/gl-tinymce-plugins.php' );
