@@ -1,8 +1,6 @@
 /* Wide screens above 1280px */
 @media only screen and (min-width: 960px) {
 
-
-
   /* Resposition the middle and sidebar */
   .middle {
     width: 765px;
@@ -30,13 +28,13 @@
   }
 
   /* When showing full sidebar, don't show the menu hide/show buttons */
-  .inversehide{
+  .inverseexpandsection{
     display: none;
   }
 
   /* Also, show the menu full by default */
   #mainmenu {
-    height: auto;
+    display: block;
   }
 }
 
@@ -46,7 +44,7 @@
     width: 100%;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-bottom: 0px;
+    padding: 40px 10px 0px 10px;
   }
 
   .center-column {

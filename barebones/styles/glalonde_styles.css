@@ -105,6 +105,7 @@ input[type=text] {
 }
 
 .accordion ul{
+  list-style: none;
   padding: 0px;
   margin: 0px;
 }
@@ -146,21 +147,13 @@ input[type=text] {
 }
 
 /* Checked label style */
-.accordion input:checked + label {
-  border-right-style: none;
+.accordion input:checked ~ label {
   border-color: rgb(225, 77, 67);
   color: rgb(225, 77, 67);
 }
 
-/* default for the content is not shown */
-.tabcontent {
-  height: 0px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 100%;
-  white-space:nowrap;
-}
 
+/* default for the content is not shown */
 .accordion .tabcontent {
   padding-right: 5px;
   font-size: 14px;
@@ -170,8 +163,16 @@ input[type=text] {
   border-color: rgb(225, 77, 67);
 }
 
-input[type=radio]:checked ~ .tabcontent {
-  height: auto;
+.expandsection {
+  display: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  white-space:nowrap;
+}
+
+input[type=radio]:checked ~ .expandsection {
+  display: block;
 }
 
 /* Menu Expanding Div */
@@ -179,10 +180,14 @@ input[type=radio]:checked ~ .tabcontent {
   list-style:none;
 }
 
-.inversehide {
+.inverseexpandsection {
   display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  white-space:nowrap;
 }
 
-input[type=radio]:checked ~ .inversehide {
+input[type=radio]:checked ~ .inverseexpandsection {
   display: none;
 }

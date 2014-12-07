@@ -7,14 +7,14 @@
 <div class="expandable">
   <li class="tab">
     <input type="radio" id="hidetab" name="ac0" checked>
-    <label for="hidetab" class="inversehide">Hide Menu</label>
+    <label for="hidetab" class="inverseexpandsection">Hide Menu</label>
   </li>
 
   <li class="tab">
     <input type="radio" id="showtab" name="ac0">
-    <hr class="inversehide">
-    <label for="showtab" class="inversehide">Show Menu</label>
-    <div id="mainmenu" class="tabcontent smart-padding">
+    <hr class="inverseexpandsection">
+    <label for="showtab" class="inverseexpandsection">Show Menu</label>
+    <div id="mainmenu" class="expandsection smart-padding">
 
       <hr>
       <?php get_search_form(); ?>
@@ -45,9 +45,12 @@
         <ul>
           <?php foreach ( $categories as $category ) : ?>
             <li class="tab">
+
               <input type="radio" id="tab-<?php echo $category->term_id; ?>" name="ac1" <?php if($category->term_id == $curr_cat) {echo 'checked';} ?>>
+
               <label for="tab-<?php echo $category->term_id; ?>"><?php echo $category->name; ?></label>
-              <div class="tabcontent smart-padding">
+
+              <div class="tabcontent expandsection smart-padding">
                 <?php
                 $post_args = array('orderby' => 'post_date', 'category' => $category->term_id, 'numberposts' => -1);
                 $currposts = get_posts( $post_args );
@@ -57,6 +60,8 @@
                     <?php if ($post->ID == $curr_post) { echo ' class="selected" ';} ?>
                   ><?php echo get_the_title( $post->term_id); ?></a><br/>
                 <?php endforeach; ?>
+                <hr>
+                <a href="<?php echo get_category_link($category->term_id); ?>">All <?php echo $category->name; ?> »</a></br>
               </div>
             </li>
           <?php endforeach; ?>
